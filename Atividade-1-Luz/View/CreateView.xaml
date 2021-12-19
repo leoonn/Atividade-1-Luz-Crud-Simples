@@ -10,29 +10,29 @@
 		<StackPanel Orientation="Vertical" Margin="295,60,307,62">
 			<TextBlock FontSize="15" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Register Product" VerticalAlignment="Top" Height="28" Width="138"/>
 			<Label VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="10,5,10,0" Width="100" Height="30" Content="Name" FontSize="10"/>
-			<TextBox Margin="25,-10,28,5" Height="24" Width="100" Text="{Binding Name}"
+			<TextBox Margin="25,-10,28,5" Height="24" Width="100" Text="{Binding NameCreate}"
 					 VerticalAlignment="Center"
 					 HorizontalAlignment="Center"
 					 />
 			<Label VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="10,5,10,0" Width="100" Height="30" Content="Category" FontSize="10"/>
-			<TextBox Margin="25,-10,28,5" Height="24" Width="100" TextWrapping="Wrap" Text="{Binding Category}"
+			<TextBox Margin="25,-10,28,5" Height="24" Width="100" TextWrapping="Wrap" Text="{Binding CategoryCreate}"
 					 VerticalAlignment="Center"
 					 HorizontalAlignment="Center"
 					 />
 			<Label VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="10,5,10,0" Width="100" Height="30" Content="Description" FontSize="10"/>
-			<TextBox Margin="25,-10,28,5" Height="24" Width="100" TextWrapping="Wrap" Text="{Binding Description}"
+			<TextBox Margin="25,-10,28,5" Height="24" Width="100" TextWrapping="Wrap" Text="{Binding DescriptionCreate}"
 					 VerticalAlignment="Center"
 					 HorizontalAlignment="Center"
 					 />
 
 			<Label VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="10,5,10,0" Width="100" Height="30" Content="Price" FontSize="10"/>
-			<TextBox Margin="25,-10,28,5" Height="24" Width="100" TextWrapping="Wrap" Text="{Binding Price}"
+			<TextBox Margin="25,-10,28,5" Height="24" Width="100" TextWrapping="Wrap" Text="{Binding PriceCreate}"
 					 VerticalAlignment="Center"
 					 HorizontalAlignment="Center"
 					 />
 			<StackPanel Orientation="Horizontal" Height="45">
-				<Button Command="{Binding Command}" Width="50" HorizontalAlignment="Left" Height="20" VerticalAlignment="Center" Content="Back" Margin="30,0,10,0"/>
-				<Button Command="{Binding CommandCreate}" Width="50" HorizontalAlignment="Left" Height="20" VerticalAlignment="Center" Content="Create" Margin="20,0,10,0"/>
+				<Button Command="{Binding CommandCloseCreateView}" Width="50" HorizontalAlignment="Left" Height="20" VerticalAlignment="Center" Content="Back" Margin="30,0,10,0"/>
+				<Button Command="{Binding CommandCreateProduct}" Width="50" HorizontalAlignment="Left" Height="20" VerticalAlignment="Center" Content="Create" Margin="20,0,10,0"/>
 			</StackPanel>
 
 

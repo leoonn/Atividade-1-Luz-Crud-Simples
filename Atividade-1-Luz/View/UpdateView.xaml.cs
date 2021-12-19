@@ -21,7 +21,7 @@ namespace Atividade_1_Luz
     {
         public UpdateView()
         {
-            DataContext = new UpdateWindowVM();
+            //DataContext = new UpdateWindowVM();
             InitializeComponent();
         }
 

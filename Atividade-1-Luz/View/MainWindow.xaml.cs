@@ -27,11 +27,8 @@ namespace Atividade_1_Luz
         {
             DataContext = new MainWindowVM();
             InitializeComponent();
-
             MainWindowVM.Data = new DataGrid();
             MainWindowVM.Data = DataGrid;
-           
-            
             if (MainWindowVM.ProductList != null)
             {
                 //data.Items.Add( new {id= item.Id, name=item.Name, category=item.Category, description=item.Description, price= "R$" + item.Price});
@@ -41,7 +38,9 @@ namespace Atividade_1_Luz
 
         private void DataGrid_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
         {
+            
             Product prod = (Product)MainWindowVM.Data.SelectedItem;
+            
             if(prod == null)
             {
                 return;

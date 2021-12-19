@@ -8,9 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
 	<Grid Background="AliceBlue">
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="774" Margin="10,242,0,0">
-			<Button Command="{Binding Command}" Content="Create" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="59"/>
-			<Button Command="{Binding CommandUpdate}" Content="Update" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="59"/>
-			<Button Content="Delete" Command="{Binding CommandDelete}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="59"/>
+			<Button  Command="{Binding CommandCreateView}"  Content="Create" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="59"/>
+			<Button IsEnabled="{Binding disableButtons}" Command="{Binding CommandUpdateView}"  Content="Update" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="59"/>
+			<Button IsEnabled="{Binding disableButtons}" Content="Delete" Command="{Binding CommandDelete}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="59"/>
 		</StackPanel>
 		<DataGrid Name="DataGrid" ItemsSource="{Binding ProductList}"    Margin="0,55,0,184" SelectedCellsChanged="DataGrid_SelectedCellsChanged">
 			<DataGrid.Columns>
